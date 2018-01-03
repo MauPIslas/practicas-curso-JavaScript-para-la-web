@@ -1,4 +1,5 @@
 'use strict'
+//This part of the code is for the view in the index
 function suma(){
   var a = Number(document.getElementById('sum1').value);
   var b = Number(document.getElementById('sum2').value);
@@ -52,14 +53,14 @@ function limpiar(){
   document.getElementById('mult2').value = "";
   document.getElementById('rmult').value = "";
 }
-//operators buttons
+    //operators buttons
 document.getElementById('suma').addEventListener('click',suma)
 document.getElementById('resta').addEventListener('click',resta)
 document.getElementById('multiplicacion').addEventListener('click',multiplicar)
 document.getElementById('division').addEventListener('click',dividir)
-//clear button
+    //clear button
 document.getElementById('clear').addEventListener('click',limpiar)
-//for thw age of the user
+    //for the age of the user
 document.addEventListener('DOMContentLoaded', function(){
   var age = prompt("Por favor ingresa tu edad para continuar");
   parseInt(age);
@@ -67,3 +68,37 @@ document.addEventListener('DOMContentLoaded', function(){
     alert('No puedes entrar aquí, vete')
   }
 })
+
+//This part of code is only for the fifth and sixth exercises in the background
+//fifth exercise
+var myArray = [1,2,3,4,5,4,5,9,10,45,1,-4,-5,-3,-1]
+function checkArray(array){
+    for(var index in array){
+      if(typeof array[index] !== "number"){
+        return false;
+      }
+    }
+    return true;
+}
+console.log(checkArray(myArray));
+//sixth exercise
+function valueMax(array){
+  var ref = 0
+  for(var i in array){
+    if(ref<array[i]){
+      ref = array[i]
+    }
+  }
+  return ref;
+}
+function valueMin(array){
+  var ref = 0
+  for(var i in array){
+    if(ref>array[i]){
+      ref = array[i]
+    }
+  }
+  return ref;
+}
+console.log(valueMax(myArray));
+console.log(valueMin(myArray));

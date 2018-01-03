@@ -1,0 +1,20 @@
+{
+  "name": "js-practico",
+  "homepage": "https://github.com/MauPIslas/practicas-curso-JavaScript-para-la-web",
+  "authors": [
+    "Mauricio Piñon Islas <mauricio_2612@live.com.mx>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cookies-js": "^1.2.3"
+  }
+}
